@@ -34,7 +34,9 @@ body{
     background-color: orange ;
     width: 25%;
     height: 1vh; 
-    transform: translate(100%, 100%);
+    margin-top: 5vh;
+    margin-left: 25%;
+    text-align: center;
 
 
 }
@@ -52,19 +54,47 @@ background-position: center;
 
 background-size: cover;
 padding-top: 13vh;
+border-radius: 25px;
 }
 
 #top{
   display: flex;
+  margin-top:1vh;
 }
 span{
     margin-left:3vw; 
     color: rgb(255, 255, 255);
     width: 80px;
     background-color: rgb(255, 119, 0);
+    border-radius: 30px;
 }
 
 
 
 
+body, html {
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .parallax {
    
+    background-image: url();
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .transition{
+    background-attachment: fixed;
+    background-position: center;
+   background-size: cover;
+    height: 20vh;
+    background-color: rgb(220, 220, 220);
+    padding: 10%;
+  }

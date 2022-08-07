@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+   color: white;
+  
+   
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+header{
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.sidescreen{
+    position: relative;
+    background-color: rgb(3, 4, 3,0.7);
+    height: 100vh;
+    
+    width: 30vw;
+    margin-left: 0;
+    margin-inline-end: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.pSide , .titleSide{
+    color: white;
+   margin-left:7vw ;
+   
+   width: 60%
+   
+}
+.titleSide{
+    margin-top: 3vh;
+    font-size: 4vw;
+    margin-bottom: 5vh;
+
+
+}
+
+.pSide{
+    font-size: 2vw;
+
+    
+}
+
+
+.orderSide{
+    
+    background-color: orange;
+    border-radius: 25px;
+    width: 30%;
+    margin-left: 8vw;
+    padding : 5%;
+    text-align: center;
+   
+    
+    
+    margin-top: 10vh;
+    margin-bottom: 45vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#orderSideP
+{
+    color: black;
+    font-weight: normal;
+    font-family: fantasy;
+    font-size: large;
+
+
+}
+.headHome{
+
+    width: 100vw;
+    
+    height: 10vh;
+    position: absolute;
+    margin-top: 5vh;
+    
+}
+
+
+.background {
+    height: inherit ;
+    width: inherit ;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-10px)scale(2);
+}
+span{
+    color: black;
+    
+   font-weight: bold;
+
+}
+
+section{
+     font-size: 2rem;
+     padding: 2rem;
+     background-color: #333;
+     color: white;
+     padding-top: 0.1;
+}
+body
+{
+    background-color: #333;
+    color: white;
+    padding-top: 0.1;}
+
+#sectionDiv{
+    margin-top: 15vh;
+   
+
+}
+
+#sectionFaq{
+    margin-left: 40vw;
+    padding-bottom: 1vh;
+
+    margin-bottom: 2vh;
+    color: white;
+    position: absolute;
+    padding-top: 1vh;
+    margin-top: 1vh;
+}
+
+.title {
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 30vw;
+
+}
+#firstSpan{
+    margin-left: 45vw;
+    
+}
+#spanFaq{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+span{
+    margin-left: 2vw;
+    padding: 1vw;
+    background-color: orange;
+    height: auto;
+    border-radius: 30%;
+    width: 20%;
+    color: black;
+
+}
+
+.img{
+ 
+ height: 100vh ;
+ width: 100vw ;
+ background-size: cover;
+ background-repeat: no-repeat;
+ 
+
+}
+.sectionIMG1
+{
+background-size: cover;  
+    font-size: 2rem;
+     background-color: #333;
+     color: white;
+     padding-top: 0.1;
+     width: 100vw;
+     height: 100vh;
+     position: sticky;
+}
+.img1{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    z-index: 10;
+    margin-right: 3rem;
+}
+
+body{}
+
+    .ImgSection{
+        width: auto;
+        height: auto;
+        padding-left:0;
+
+    }
+    #ImgMenue{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .fade {
+      animation-name: fadein;
+          animation-name: fade;
+        animation-duration: 1.8s;
+      }
+      
+      @keyframes fade {
+        from {opacity: 0.4} 
+        to {opacity: 1}
+      }
+      
+      .SectionContact{
+        width: 100vw;
+        height: 100vh;
+
+
+      }
+      .ContactDiv{
+        display: flex;
+      }
+
+      input{
+        color: black;
+      }
+      textarea{
+        color: black;
+      }
+      option{color: black;}
+
+      .submit{
+      
+        background-color: white;
+        padding: 0.3rem;
+        width: 4rem;
+        display: inline;
+        height: auto;
+        width: auto;
+        color: black;
+        border-style: solid;
+        border-radius: 25%;
+        font-size: small;
+       
+        margin-left: 5vh;
+      }
+      select{color: black;}
+
+     .inputname{
+        background-color:#333 !important;
+        padding: 0 !important;
+        color: white;
+        margin-left: 0 ;
+        
+     }

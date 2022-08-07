@@ -1,0 +1,28 @@
+/* first page */
+.HomePage{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+.HomePageImg{
+    height: 100vh;
+    width: 100vw;
+background-repeat: no-repeat;
+}
+
+.HomeWelcome{
+    
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 30vw;
+}
+
+.SideHome{
+    width: 30vw;
+    height: 100vh;
+    position: absolute;
+    background-color:rgba(black, black, black, 70%);
+}
