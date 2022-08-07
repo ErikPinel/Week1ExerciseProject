@@ -28,25 +28,26 @@ header{
     height: 100vh;
     
     width: 30vw;
-    margin-left: 0;
+  
     margin-inline-end: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     
 }
 
 .pSide , .titleSide{
     color: white;
-   margin-left:7vw ;
+   margin-left:8vw ;
    
-   width: 60%
+   width: 30vw;
    
 }
 .titleSide{
     margin-top: 3vh;
-    font-size: 4vw;
+    font-size: 3vw;
     margin-bottom: 5vh;
 
 
@@ -63,9 +64,9 @@ header{
     
     background-color: orange;
     border-radius: 25px;
-    width: 30%;
-    margin-left: 8vw;
-    padding : 5%;
+    width: auto;
+    /* margin-left: 5vw; */
+    padding : 2vw;
     text-align: center;
    
     
@@ -82,7 +83,7 @@ header{
     color: black;
     font-weight: normal;
     font-family: fantasy;
-    font-size: large;
+    font-size: 2.5vw;
 
 
 }
@@ -132,7 +133,7 @@ body
 }
 
 #sectionFaq{
-    margin-left: 40vw;
+    margin-left: 35vw;
     padding-bottom: 1vh;
 
     margin-bottom: 2vh;
@@ -143,7 +144,7 @@ body
 }
 
 .title {
-    font-size: 7rem;
+    font-size: 10vw;
     color: white;
     text-shadow: 0 0 5px black;
     position: absolute;
@@ -168,6 +169,7 @@ span{
     border-radius: 30%;
     width: 20%;
     color: black;
+    font-size: 1.5vw;
 
 }
 
@@ -220,13 +222,15 @@ body{}
     .fade {
       animation-name: fadein;
           animation-name: fade;
-        animation-duration: 1.8s;
+        animation-duration: 1.5s;
       }
       
       @keyframes fade {
-        from {opacity: 0.4} 
+        from {opacity: 0.2} 
         to {opacity: 1}
       }
+
+     
       
       .SectionContact{
         width: 100vw;
@@ -267,6 +271,18 @@ body{}
         background-color:#333 !important;
         padding: 0 !important;
         color: white;
-        margin-left: 0 ;
+        margin-left: 0;
         
      }
+
+     .GlutenTag{
+        position: absolute;
+        z-index: 10;
+        transform: translateY(-100vh);
+
+     }
+
+     @media screen and (max-width: 600px) {
+        h1:active{color:green  !important; }
+
+      }
