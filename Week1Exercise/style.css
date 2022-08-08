@@ -1,52 +1,56 @@
-*{
+* {
     margin: 0;
-   color: white;
-  
-   
+    color: white;
+
+
 }
 
-.wrapper{
+.wrapper {
     height: 100vh;
     width: 100vw;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
 }
-header{
-   
+
+header {
+
     position: relative;
     display: flex;
     justify-content: center;
-   
+
     height: 100vh;
     width: 100vw;
     transform-style: preserve-3d;
     z-index: -1;
 }
-.sidescreen{
+
+.sidescreen {
     position: relative;
-    background-color: rgb(3, 4, 3,0.7);
+    background-color: rgb(3, 4, 3, 0.7);
     height: 100vh;
-    
+
     width: 30vw;
-  
+
     margin-inline-end: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
-.pSide , .titleSide{
+.pSide,
+.titleSide {
     color: white;
-   margin-left:8vw ;
-   
-   width: 30vw;
-   
+    margin-left: 8vw;
+
+    width: 30vw;
+
 }
-.titleSide{
+
+.titleSide {
     margin-top: 3vh;
     font-size: 3vw;
     margin-bottom: 5vh;
@@ -54,33 +58,32 @@ header{
 
 }
 
-.pSide{
+.pSide {
     font-size: 2vw;
 
-    
+
 }
 
 
-.orderSide{
-    
+.orderSide {
+
     background-color: orange;
     border-radius: 25px;
     width: auto;
     /* margin-left: 5vw; */
-    padding : 2vw;
+    padding: 2vw;
     text-align: center;
-   
-    
-    
+
+
+
     margin-top: 10vh;
     margin-bottom: 45vh;
     display: flex;
     justify-content: center;
-    
+
 }
 
-#orderSideP
-{
+#orderSideP {
     color: black;
     font-weight: normal;
     font-family: fantasy;
@@ -88,49 +91,50 @@ header{
 
 
 }
-.headHome{
+
+.headHome {
 
     width: 100vw;
-    
+
     height: 10vh;
     position: absolute;
     margin-top: 5vh;
-    
+
 }
 
 
 .background {
-    height: inherit ;
-    width: inherit ;
+    height: inherit;
+    width: inherit;
     position: absolute;
     z-index: -1;
     object-fit: cover;
     transform: translateZ(-10px)scale(2);
 }
-span{
-   
-}
 
-section{
-     font-size: 2rem;
-     padding: 2rem;
-     background-color: #333;
-     color: white;
-     padding-top: 0.1;
-}
-body
-{
+span {}
+
+section {
+    font-size: 2rem;
+    padding: 2rem;
     background-color: #333;
     color: white;
-    padding-top: 0.1;}
+    padding-top: 0.1;
+}
 
-#sectionDiv{
+body {
+    background-color: #333;
+    color: white;
+    padding-top: 0.1;
+}
+
+#sectionDiv {
     margin-top: 15vh;
-   
+
 
 }
 
-#sectionFaq{
+#sectionFaq {
     margin-left: 35vw;
     padding-bottom: 1vh;
 
@@ -150,16 +154,18 @@ body
     margin-left: 30vw;
 
 }
-#firstSpan{
+
+#firstSpan {
     margin-left: 45vw;
-    
+
 }
-#spanFaq{
+
+#spanFaq {
     padding-left: 1.5vw;
     padding-right: 1.5vw;
 }
 
-span{
+span {
     margin-left: 2vw;
     padding: 1vw;
     background-color: orange;
@@ -167,34 +173,35 @@ span{
     border-radius: 30%;
     width: 20%;
     color: black;
-    font-size: 1.5vw;  
+    font-size: 1.5vw;
 
     font-weight: bold;
- 
+
 
 }
 
-.img{
- 
- height: 100vh ;
- width: 100vw ;
- background-size: cover;
- background-repeat: no-repeat;
- 
+.img {
+
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 
 }
-.sectionIMG1
-{
-background-size: cover;  
+
+.sectionIMG1 {
+    background-size: cover;
     font-size: 2rem;
-     background-color: #333;
-     color: white;
-     padding-top: 0.1;
-     width: 100vw;
-     height: 100vh;
-     position: sticky;
+    background-color: #333;
+    color: white;
+    padding-top: 0.1;
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
 }
-.img1{
+
+.img1 {
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
@@ -205,32 +212,177 @@ background-size: cover;
     margin-right: 3rem;
 }
 
-body{}
+body {}
 
-    .ImgSection{
-        width: auto;
-        height: auto;
-        padding-left:0;
+.ImgSection {
+    width: auto;
+    height: auto;
+    padding-left: 0;
 
+}
+
+#ImgMenue {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.fade {
+    animation-name: fadein;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+
+
+/* nav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    display: none;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 3vh;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    display: none;
+}
+
+#NavID {
+    padding: 0;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    top: 3vh;
+    right: 3vw;
+    width: auto;
+    display: none;
+}
+
+/*nav  */
+
+@keyframes fade {
+    from {
+        opacity: 0.2
     }
-    #ImgMenue{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1rem;
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+.SectionContact {
+    width: 100vw;
+    height: 100vh;
+
+
+
+}
+
+.ContactDiv {
+    display: flex;
+}
+
+input {
+    color: black;
+}
+
+textarea {
+    color: black;
+}
+
+option {
+    color: black;
+}
+
+#submit{
+    display: block;
+}
+
+.submit {
+
+    background-color: white;
+    padding: 0.3rem;
+    width: 4rem;
+    display: inline;
+    height: auto;
+    width: auto;
+    color: black;
+    border-style: solid;
+    border-radius: 25%;
+    font-size: small;
+    margin-right: 5vw;
+display: inline-block;
+    margin-left: 5vh;
+}
+
+select {
+    color: black;
+}
+
+.inputname {
+    background-color: #333 !important;
+    padding: 0 !important;
+    color: white;
+    margin-left: 0;
+    font-size: 0;
+
+
+}
+
+.GlutenTag {
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-98vh);
+    margin-left: 2vw;
+
+}
+
+.inputsCon {
+    background-color: none;
+
+
+}
+
+@media screen and (max-width: 600px) {
+    h1:active {
+        color: bisque !important;
     }
 
-    .fade {
-      animation-name: fadein;
-          animation-name: fade;
-        animation-duration: 1.5s;
-      }
+    section {
+       
+    }
 
-
-
-
-      /* nav */
-      .sidenav {
+    .sidenav {
         height: 100%;
         width: 0;
         position: fixed;
@@ -241,8 +393,8 @@ body{}
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
-        display: none;
-      }
+        display: block;
+    }
 
     .sidenav a {
         padding: 8px 8px 8px 32px;
@@ -251,152 +403,35 @@ body{}
         color: #818181;
         display: block;
         transition: 0.3s;
-        display: none;
-      }
-      
-      .sidenav a:hover {
+        display: block;
+    }
+
+    .sidenav a:hover {
         color: #f1f1f1;
-      }
-      
-      .sidenav .closebtn {
+    }
+
+    .sidenav .closebtn {
         position: absolute;
         top: 3vh;
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
-        display: none;
-      }
-      #NavID{
-        padding:0;
+        display: block;
+    }
+
+    #NavID {
+        padding: 0;
         background-color: white;
         position: absolute;
         z-index: 99;
         top: 3vh;
         right: 3vw;
         width: auto;
-        display: none;
-      }
-      /*nav  */
-      
-      @keyframes fade {
-        from {opacity: 0.2} 
-        to {opacity: 1}
-      }
-
-     
-      
-      .SectionContact{
-        width: 100vw;
-        height: 100vh;
-        
-
-
-      }
-      .ContactDiv{
-        display: flex;
-      }
-
-      input{
-        color: black;
-      }
-      textarea{
-        color: black;
-      }
-      option{color: black;}
-
-      .submit{
-      
-        background-color: white;
-        padding: 0.3rem;
-        width: 4rem;
-        display: inline;
-        height: auto;
-        width: auto;
-        color: black;
-        border-style: solid;
-        border-radius: 25%;
-        font-size: small;
-       
-        margin-left: 5vh;
-      }
-      select{color: black;}
-
-     .inputname{
-        background-color:#333 !important;
-        padding: 0 !important;
-        color: white;
-        margin-left: 0;
-        font-size: 0;
-        
-        
-     }
-
-     .GlutenTag{
-        position: absolute;
-        z-index: 10;
-        transform: translateY(-98vh);
-        margin-left: 2vw;
-
-     }
-    .inputsCon{
-        background-color: none;
-
-        
+        display: block;
     }
 
-     @media screen and (max-width: 600px) {
-        h1:active{color:bisque  !important; }
-        section{
-            background: linear-gradient(#bdc3c7, #2c3e50);}
+    .headHome {
+        display: none;
+    }
 
-            .sidenav {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 100;
-                top: 0;
-                right: 0;
-                background-color: #111;
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-                display: block;
-              }
-        
-            .sidenav a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #818181;
-                display: block;
-                transition: 0.3s;
-                display: block;
-              }
-              
-              .sidenav a:hover {
-                color: #f1f1f1;
-              }
-              
-              .sidenav .closebtn {
-                position: absolute;
-                top: 3vh;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-                display: block;
-              }
-              #NavID{
-                padding:0;
-                background-color: white;
-                position: absolute;
-                z-index: 99;
-                top: 3vh;
-                right: 3vw;
-                width: auto;
-                display: block;
-              }
-.headHome{display: none;}
-         
-        }
-
-      
+}
