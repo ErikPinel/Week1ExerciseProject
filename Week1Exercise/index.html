@@ -14,9 +14,19 @@
 </head>
 
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#HomeSpan0" class="" onclick="closeNav()">Home</a>
+        <a href="#MenuID" onclick="closeNav()">Menu</a>
+        <a href="#sectionFaq" onclick="closeNav()">FAQ</a>
+        <a href="#ContactID0" onclick="closeNav()">Contact</a>
+      </div>
+      <span id="NavID" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
 
 <div class="wrapper">
     
+   
+
     <header>
         
        
@@ -71,14 +81,14 @@
 </section >
 
 <section class="SectionContact">
-<h1 id="ContactID0" style="margin-left: 30vw; margin-bottom: 5vh;"><a href="#home0" style="text-decoration: none; color: white;"> Contact</a></h1>
+<h1 id="ContactID0" style="margin-left: 40vw; margin-bottom: 5vh;"><a href="#home0" style="text-decoration: none; color: white;"> Contact</a></h1>
 <div style="margin-left: 5vw ;">
     <div><span class="inputname"> enter name </span>  <span class="inputname" style="margin-left: 2vw;"> enter email </span></div>
     <div class="ContactDiv">
         <form>
             
         <input type="text"  placeholder="enter name" alt="enter name"class="inputsCon">
-        <input type="email"  placeholder="enter email" alt="enter email" class="">
+        <input type="email"  placeholder="enter email" alt="enter email" class="inputsCon" style="margin-left: 5vw;">
         
     
      </div>
@@ -142,6 +152,20 @@ x=document.getElementsByClassName("inputsCon");  // Find the elements
     }
 
 }
+
+
+// NavBar section
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+// -
 
     </script> 
     </div>

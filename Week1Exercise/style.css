@@ -4,6 +4,7 @@
   
    
 }
+
 .wrapper{
     height: 100vh;
     width: 100vw;
@@ -17,8 +18,8 @@ header{
     display: flex;
     justify-content: center;
    
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     transform-style: preserve-3d;
     z-index: -1;
 }
@@ -107,10 +108,7 @@ header{
     transform: translateZ(-10px)scale(2);
 }
 span{
-    color: black;
-    
-   font-weight: bold;
-
+   
 }
 
 section{
@@ -169,7 +167,10 @@ span{
     border-radius: 30%;
     width: 20%;
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.5vw;  
+
+    font-weight: bold;
+ 
 
 }
 
@@ -224,6 +225,58 @@ body{}
           animation-name: fade;
         animation-duration: 1.5s;
       }
+
+
+
+
+      /* nav */
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: none;
+      }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        display: none;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 3vh;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        display: none;
+      }
+      #NavID{
+        padding:0;
+        background-color: white;
+        position: absolute;
+        z-index: 99;
+        top: 3vh;
+        right: 3vw;
+        width: auto;
+        display: none;
+      }
+      /*nav  */
       
       @keyframes fade {
         from {opacity: 0.2} 
@@ -235,6 +288,7 @@ body{}
       .SectionContact{
         width: 100vw;
         height: 100vh;
+        
 
 
       }
@@ -272,17 +326,77 @@ body{}
         padding: 0 !important;
         color: white;
         margin-left: 0;
+        font-size: 0;
+        
         
      }
 
      .GlutenTag{
         position: absolute;
         z-index: 10;
-        transform: translateY(-100vh);
+        transform: translateY(-98vh);
+        margin-left: 2vw;
 
      }
+    .inputsCon{
+        background-color: none;
+
+        
+    }
 
      @media screen and (max-width: 600px) {
-        h1:active{color:green  !important; }
+        h1:active{color:bisque  !important; }
+        section{
+            background: linear-gradient(#bdc3c7, #2c3e50);}
 
-      }
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 100;
+                top: 0;
+                right: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+                display: block;
+              }
+        
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+                display: block;
+              }
+              
+              .sidenav a:hover {
+                color: #f1f1f1;
+              }
+              
+              .sidenav .closebtn {
+                position: absolute;
+                top: 3vh;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+                display: block;
+              }
+              #NavID{
+                padding:0;
+                background-color: white;
+                position: absolute;
+                z-index: 99;
+                top: 3vh;
+                right: 3vw;
+                width: auto;
+                display: block;
+              }
+.headHome{display: none;}
+         
+        }
+
+      
